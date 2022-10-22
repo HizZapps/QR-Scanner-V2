@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scan_view"
+            android:layout_weight="0.5"
+            app:autoFocusButtonColor="@color/white"
+            app:flashButtonColor="@android:color/white"
+            app:maskColor="#54000000"
+            app:autoFocusButtonVisible="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_textView"
+            android:layout_weight="1"
+            android:text="Scan something..."
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
